@@ -1,0 +1,25 @@
+<div class="container">
+    <mat-card>
+        <form>
+            <mat-form-field class="sub-container">
+                <mat-label>Email</mat-label>
+                <input type="email" matInput placeholder="example@xyz.com">
+            </mat-form-field>
+            <mat-form-field class="sub-container">
+                <mat-label>Username</mat-label>
+                <input type="text" matInput placeholder="Username">
+            </mat-form-field>
+
+            <mat-form-field class="sub-container">
+                <mat-label>Password</mat-label>
+                <input type="password" matInput placeholder="Password">
+            </mat-form-field>
+
+            <div class="signup">
+                Already have an account?
+                <a class="link" routerLink = "/login">Login</a>
+            </div>
+            <button mat-raised-button color="primary">SignIn</button>
+        </form>
+    </mat-card>
+</div>

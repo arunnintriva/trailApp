@@ -1,16 +1,40 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule, Route } from '@angular/router';
+
+import { MatCardModule } from '@angular/material/card';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
 
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LoginComponent } from './auth/login/login.component';
+import { SignupComponent } from './auth/signup/signup.component';
+
+const routes: Route[] = [
+  {
+    path: 'login',
+    component: LoginComponent
+  },
+  {
+    path: 'signup',
+    component: SignupComponent
+  }
+];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    SignupComponent,
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatInputModule,
+    MatButtonModule,
+    RouterModule.forRoot(routes),
   ],
   providers: [],
   bootstrap: [AppComponent]
