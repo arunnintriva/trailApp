@@ -1,16 +1,9 @@
 
-.container {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    .sub-container {
-        width: 100%;
-      }
 
-    mat-card {
-      width: 500px;
+
+      .sub-container {
+          width: 100%;
+        }
 
       form {
         display: flex;
@@ -28,7 +21,4 @@
         }
 
       }
-    }
-
-
-  }
+    

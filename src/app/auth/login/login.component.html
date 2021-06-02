@@ -1,22 +1,20 @@
-<div class="container">
-  <mat-card>
-    <form>
-      <mat-form-field class="sub-container">
-        <mat-label>Username</mat-label>
-        <input type="text" matInput placeholder="Username">
-      </mat-form-field>
+<app-authlayout>
+  <form>
+    <mat-form-field class="sub-container">
+      <mat-label>Username</mat-label>
+      <input type="text" matInput placeholder="Username">
+    </mat-form-field>
 
-      <mat-form-field class="sub-container">
-        <mat-label>Password</mat-label>
-        <input type="password" matInput placeholder="Password">
-      </mat-form-field>
+    <mat-form-field class="sub-container">
+      <mat-label>Password</mat-label>
+      <input type="password" matInput placeholder="Password">
+    </mat-form-field>
 
-      <p class="signup">
-        Don't have an account yet?
-        <a class="link" routerLink="/signup">Sign Up</a>
-      </p>
+    <p class="signup">
+      Don't have an account yet?
+      <a class="link" routerLink="/signup">Sign Up</a>
+    </p>
 
-      <button mat-raised-button color="primary">Login</button>
-    </form>
-  </mat-card>
-</div>
+    <button mat-raised-button color="primary">Login</button>
+  </form>
+</app-authlayout>
